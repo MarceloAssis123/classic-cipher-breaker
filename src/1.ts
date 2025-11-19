@@ -9,7 +9,7 @@ import { breakSubstitutionCipher, BreakSubstitutionResult } from '../lib/breaker
  * @param maxSizeMB - Tamanho máximo em MB a ser lido (padrão: 100MB)
  * @returns Modelo de linguagem treinado
  */
-function loadLanguageModel(maxSizeMB: number = 1): LanguageModel {
+function loadLanguageModel(maxSizeMB: number = 100): LanguageModel {
     console.log("📚 Carregando corpus WikiText-103...");
 
     const corpusPath = path.join(__dirname, '../wikitext103_train.txt');
